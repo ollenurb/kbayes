@@ -1,0 +1,35 @@
+cabal-version:      2.4
+name:               bayes
+version:            0.1.0.0
+author:             Ollenurb
+maintainer:         brunello.mtt@gmail.com
+build-type:         Simple
+
+library library
+  exposed-modules:  Dataset,
+                    Dataset.SMS
+  hs-source-dirs:   src
+  extensions:       TypeApplications
+  default-language: Haskell2010
+  build-depends:    base ^>=4.14.3.0,
+                    containers,
+                    unordered-containers,
+                    mtl,
+                    vector,
+                    random-shuffle,
+                    random,
+                    matrix,
+                    attoparsec,
+                    megaparsec,
+                    bytestring
+
+executable classifier
+  main-is:          Main.hs
+  build-depends:    library,
+                    base ^>=4.14.3.0
+  hs-source-dirs:   .
+  default-language: Haskell2010
+  ghc-options:     -O2
+                   -threaded
+                   -fprof-auto
+                   -with-rtsopts=-N
