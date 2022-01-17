@@ -1,6 +1,7 @@
 module Dataset (FromLine (..),
                 loadDataset,
                 Dataset,
+                trainTestSplit
                ) where
 
 import           Data.Attoparsec.ByteString (Parser, Result, feed, maybeResult, parse)
