@@ -1,5 +1,5 @@
 # Killer Bayes
-A simple implementation of a Bayesian spam filter. This project has been created for educational purposes to teach myself some principles behind probabilistic machine learning models such as Naive Bayes. For such reasons it hasn't been designed to be used in production.
+A simple implementation of a Bayesian spam filter. This project has been created for educational purposes to teach myself the basic principles behind probabilistic machine learning models. It follows that for such reasons it hasn't been designed to be used in production.
 
 ## Build
 There are essentially 2 methods that I recommend to build the program:
